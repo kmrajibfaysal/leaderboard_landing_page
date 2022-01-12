@@ -22,6 +22,11 @@ main {
   padding: 30px;
 }
 
+hr {
+  border: 1px solid #d1d1d1;
+  margin-bottom: 27px;
+}
+
 /* top players style */
 .players {
   display: grid;
@@ -45,6 +50,12 @@ main {
 /* -----------------------
      top blogs styles 
 ----------------------*/
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 26px;
+}
+
 .blog {
   display: flex;
   align-items: center;
@@ -66,4 +77,9 @@ main {
 .blog-author {
   color: #9f9f9f;
   font-size: 16px;
+}
+
+.blog-author a {
+  color: #562eff;
+  text-decoration: none;
 }
