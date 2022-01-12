@@ -162,3 +162,61 @@ hr {
   border-radius: 15px;
   padding: 2px 5px;
 }
+
+
+/* -----------------------
+     Media queries
+----------------------*/
+
+
+/* Mobile devices */
+
+@media only screen and (max-width: 688px){
+  .container {
+    width: 100%;
+  }
+  .players {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .player, .blog {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .blogs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .courses {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .course, .blog {
+    margin-bottom: 20px;
+  }
+}
+
+/* tablet devices */
+
+@media only screen and (min-width: 688px) and (max-width:992px) {
+  .container {
+    width: 100%;
+  }
+
+  .players {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .courses {
+    display: flex;
+    justify-content: center;
+    align-items: center
+  }
+  .player, .blog {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
